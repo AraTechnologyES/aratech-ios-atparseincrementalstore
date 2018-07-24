@@ -7,9 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E198B3121007E7900CF6C7D /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E198B3021007E7900CF6C7D /* NSManagedObject.swift */; };
+		2E198B322100806900CF6C7D /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97020F76F9300266950 /* ATCoreData.framework */; };
+		2E198B332100806900CF6C7D /* ATLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D96D20F76F9300266950 /* ATLibrary.framework */; };
+		2E198B342100806900CF6C7D /* ATParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97320F76F9400266950 /* ATParse.framework */; };
+		2E198B352100806900CF6C7D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97620F76F9400266950 /* Bolts.framework */; };
+		2E198B362100806900CF6C7D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97120F76F9300266950 /* Parse.framework */; };
+		2E198B382100830500CF6C7D /* ATCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97020F76F9300266950 /* ATCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B392100832200CF6C7D /* ATLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D96D20F76F9300266950 /* ATLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B3A2100833400CF6C7D /* ATParse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97320F76F9400266950 /* ATParse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B3B2100833400CF6C7D /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97620F76F9400266950 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B3C2100833400CF6C7D /* Parse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97120F76F9300266950 /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B3D2100834B00CF6C7D /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97420F76F9400266950 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B3E2100834B00CF6C7D /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D96C20F76F9300266950 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B3F2100834B00CF6C7D /* FBSDKPlacesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D96E20F76F9300266950 /* FBSDKPlacesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B402100834B00CF6C7D /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97520F76F9400266950 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B412100834B00CF6C7D /* ParseFacebookUtilsV4.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D96F20F76F9300266950 /* ParseFacebookUtilsV4.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B422100834B00CF6C7D /* ParseTwitterUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97220F76F9300266950 /* ParseTwitterUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E198B432100834B00CF6C7D /* ParseUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97720F76F9400266950 /* ParseUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E76D92D20F76AF300266950 /* ATParseIncrementalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D92320F76AF200266950 /* ATParseIncrementalStore.framework */; };
 		2E76D93220F76AF300266950 /* ATParseIncrementalStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E76D93120F76AF300266950 /* ATParseIncrementalStoreTests.swift */; };
 		2E76D93420F76AF300266950 /* ATParseIncrementalStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E76D92620F76AF200266950 /* ATParseIncrementalStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E76D95720F76DE700266950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E76D95620F76DE700266950 /* AppDelegate.swift */; };
+		2E76D95920F76DE700266950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E76D95820F76DE700266950 /* ViewController.swift */; };
+		2E76D95C20F76DE700266950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E76D95A20F76DE700266950 /* Main.storyboard */; };
+		2E76D95F20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E76D95D20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodeld */; };
+		2E76D96120F76DE800266950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E76D96020F76DE800266950 /* Assets.xcassets */; };
+		2E76D96420F76DE800266950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E76D96220F76DE800266950 /* LaunchScreen.storyboard */; };
+		2E76D97920F76F9400266950 /* ATLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D96D20F76F9300266950 /* ATLibrary.framework */; };
+		2E76D97C20F76F9400266950 /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97020F76F9300266950 /* ATCoreData.framework */; };
+		2E76D97D20F76F9400266950 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97120F76F9300266950 /* Parse.framework */; };
+		2E76D97F20F76F9400266950 /* ATParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97320F76F9400266950 /* ATParse.framework */; };
+		2E76D98220F76F9400266950 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97620F76F9400266950 /* Bolts.framework */; };
+		2E76D98620F770CD00266950 /* ATParseIncrementalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E76D98520F770CD00266950 /* ATParseIncrementalStore.swift */; };
+		2E76D98720F7710500266950 /* ATParseIncrementalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D92320F76AF200266950 /* ATParseIncrementalStore.framework */; };
+		2E76D98820F7710500266950 /* ATParseIncrementalStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D92320F76AF200266950 /* ATParseIncrementalStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2ED0A87D20FCEC5C0077AB7A /* NSEntityDescription+ParseClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0A87C20FCEC5C0077AB7A /* NSEntityDescription+ParseClassName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,15 +53,75 @@
 			remoteGlobalIDString = 2E76D92220F76AF200266950;
 			remoteInfo = ATParseIncrementalStore;
 		};
+		2E76D98920F7710500266950 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E76D91A20F76AF200266950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E76D92220F76AF200266950;
+			remoteInfo = ATParseIncrementalStore;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2E76D98B20F7710600266950 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E198B3D2100834B00CF6C7D /* FBSDKCoreKit.framework in Embed Frameworks */,
+				2E198B3E2100834B00CF6C7D /* FBSDKLoginKit.framework in Embed Frameworks */,
+				2E198B3F2100834B00CF6C7D /* FBSDKPlacesKit.framework in Embed Frameworks */,
+				2E198B402100834B00CF6C7D /* FBSDKShareKit.framework in Embed Frameworks */,
+				2E198B412100834B00CF6C7D /* ParseFacebookUtilsV4.framework in Embed Frameworks */,
+				2E198B422100834B00CF6C7D /* ParseTwitterUtils.framework in Embed Frameworks */,
+				2E198B432100834B00CF6C7D /* ParseUI.framework in Embed Frameworks */,
+				2E198B3A2100833400CF6C7D /* ATParse.framework in Embed Frameworks */,
+				2E198B3B2100833400CF6C7D /* Bolts.framework in Embed Frameworks */,
+				2E198B3C2100833400CF6C7D /* Parse.framework in Embed Frameworks */,
+				2E198B392100832200CF6C7D /* ATLibrary.framework in Embed Frameworks */,
+				2E198B382100830500CF6C7D /* ATCoreData.framework in Embed Frameworks */,
+				2E76D98820F7710500266950 /* ATParseIncrementalStore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2E198B3021007E7900CF6C7D /* NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObject.swift; sourceTree = "<group>"; };
+		2E198B372100820500CF6C7D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2E76D92320F76AF200266950 /* ATParseIncrementalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATParseIncrementalStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E76D92620F76AF200266950 /* ATParseIncrementalStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATParseIncrementalStore.h; sourceTree = "<group>"; };
 		2E76D92720F76AF200266950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E76D92C20F76AF300266950 /* ATParseIncrementalStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATParseIncrementalStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E76D93120F76AF300266950 /* ATParseIncrementalStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATParseIncrementalStoreTests.swift; sourceTree = "<group>"; };
 		2E76D93320F76AF300266950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E76D95420F76DE700266950 /* ATParseIncrementalStore Example iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ATParseIncrementalStore Example iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E76D95620F76DE700266950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E76D95820F76DE700266950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E76D95B20F76DE700266950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E76D95E20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATParseIncrementalStore_Example_iOS.xcdatamodel; sourceTree = "<group>"; };
+		2E76D96020F76DE800266950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E76D96320F76DE800266950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E76D96520F76DE800266950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E76D96C20F76F9300266950 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2E76D96D20F76F9300266950 /* ATLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATLibrary.framework; path = Carthage/Build/iOS/ATLibrary.framework; sourceTree = "<group>"; };
+		2E76D96E20F76F9300266950 /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = Carthage/Build/iOS/FBSDKPlacesKit.framework; sourceTree = "<group>"; };
+		2E76D96F20F76F9300266950 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Carthage/Build/iOS/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		2E76D97020F76F9300266950 /* ATCoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATCoreData.framework; path = Carthage/Build/iOS/ATCoreData.framework; sourceTree = "<group>"; };
+		2E76D97120F76F9300266950 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Carthage/Build/iOS/Parse.framework; sourceTree = "<group>"; };
+		2E76D97220F76F9300266950 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = Carthage/Build/iOS/ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		2E76D97320F76F9400266950 /* ATParse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATParse.framework; path = Carthage/Build/iOS/ATParse.framework; sourceTree = "<group>"; };
+		2E76D97420F76F9400266950 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2E76D97520F76F9400266950 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2E76D97620F76F9400266950 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
+		2E76D97720F76F9400266950 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = Carthage/Build/iOS/ParseUI.framework; sourceTree = "<group>"; };
+		2E76D98520F770CD00266950 /* ATParseIncrementalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATParseIncrementalStore.swift; sourceTree = "<group>"; };
+		2E76D98D20F7748B00266950 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		2E76D98E20F7748B00266950 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
+		2ED0A87420FCCB250077AB7A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		2ED0A87C20FCEC5C0077AB7A /* NSEntityDescription+ParseClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEntityDescription+ParseClassName.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +129,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E76D97920F76F9400266950 /* ATLibrary.framework in Frameworks */,
+				2E76D97C20F76F9400266950 /* ATCoreData.framework in Frameworks */,
+				2E76D97D20F76F9400266950 /* Parse.framework in Frameworks */,
+				2E76D97F20F76F9400266950 /* ATParse.framework in Frameworks */,
+				2E76D98220F76F9400266950 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +145,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E76D95120F76DE700266950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E198B322100806900CF6C7D /* ATCoreData.framework in Frameworks */,
+				2E198B332100806900CF6C7D /* ATLibrary.framework in Frameworks */,
+				2E198B342100806900CF6C7D /* ATParse.framework in Frameworks */,
+				2E198B352100806900CF6C7D /* Bolts.framework in Frameworks */,
+				2E198B362100806900CF6C7D /* Parse.framework in Frameworks */,
+				2E76D98720F7710500266950 /* ATParseIncrementalStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,7 +166,9 @@
 			children = (
 				2E76D92520F76AF200266950 /* ATParseIncrementalStore */,
 				2E76D93020F76AF300266950 /* ATParseIncrementalStoreTests */,
+				2E76D95520F76DE700266950 /* ATParseIncrementalStore Example iOS */,
 				2E76D92420F76AF200266950 /* Products */,
+				2E76D96B20F76F9300266950 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +177,7 @@
 			children = (
 				2E76D92320F76AF200266950 /* ATParseIncrementalStore.framework */,
 				2E76D92C20F76AF300266950 /* ATParseIncrementalStoreTests.xctest */,
+				2E76D95420F76DE700266950 /* ATParseIncrementalStore Example iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +185,9 @@
 		2E76D92520F76AF200266950 /* ATParseIncrementalStore */ = {
 			isa = PBXGroup;
 			children = (
-				2E76D92620F76AF200266950 /* ATParseIncrementalStore.h */,
-				2E76D92720F76AF200266950 /* Info.plist */,
+				2E76D98520F770CD00266950 /* ATParseIncrementalStore.swift */,
+				2ED0A87520FCDABB0077AB7A /* Extensions */,
+				2E76D98C20F7744400266950 /* Resources */,
 			);
 			path = ATParseIncrementalStore;
 			sourceTree = "<group>";
@@ -84,6 +199,61 @@
 				2E76D93320F76AF300266950 /* Info.plist */,
 			);
 			path = ATParseIncrementalStoreTests;
+			sourceTree = "<group>";
+		};
+		2E76D95520F76DE700266950 /* ATParseIncrementalStore Example iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2E76D95620F76DE700266950 /* AppDelegate.swift */,
+				2E76D95820F76DE700266950 /* ViewController.swift */,
+				2E76D95A20F76DE700266950 /* Main.storyboard */,
+				2E76D96020F76DE800266950 /* Assets.xcassets */,
+				2E76D96220F76DE800266950 /* LaunchScreen.storyboard */,
+				2E76D96520F76DE800266950 /* Info.plist */,
+				2E76D95D20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodeld */,
+				2E198B372100820500CF6C7D /* Debug.xcconfig */,
+			);
+			path = "ATParseIncrementalStore Example iOS";
+			sourceTree = "<group>";
+		};
+		2E76D96B20F76F9300266950 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E76D97020F76F9300266950 /* ATCoreData.framework */,
+				2E76D96D20F76F9300266950 /* ATLibrary.framework */,
+				2E76D97320F76F9400266950 /* ATParse.framework */,
+				2E76D97620F76F9400266950 /* Bolts.framework */,
+				2E76D97420F76F9400266950 /* FBSDKCoreKit.framework */,
+				2E76D96C20F76F9300266950 /* FBSDKLoginKit.framework */,
+				2E76D96E20F76F9300266950 /* FBSDKPlacesKit.framework */,
+				2E76D97520F76F9400266950 /* FBSDKShareKit.framework */,
+				2E76D97120F76F9300266950 /* Parse.framework */,
+				2E76D96F20F76F9300266950 /* ParseFacebookUtilsV4.framework */,
+				2E76D97220F76F9300266950 /* ParseTwitterUtils.framework */,
+				2E76D97720F76F9400266950 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E76D98C20F7744400266950 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E76D92620F76AF200266950 /* ATParseIncrementalStore.h */,
+				2E76D92720F76AF200266950 /* Info.plist */,
+				2E76D98D20F7748B00266950 /* Cartfile */,
+				2E76D98E20F7748B00266950 /* Cartfile.resolved */,
+				2ED0A87420FCCB250077AB7A /* .swiftlint.yml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2ED0A87520FCDABB0077AB7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2ED0A87C20FCEC5C0077AB7A /* NSEntityDescription+ParseClassName.swift */,
+				2E198B3021007E7900CF6C7D /* NSManagedObject.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +278,7 @@
 				2E76D91F20F76AF200266950 /* Frameworks */,
 				2E76D92020F76AF200266950 /* Headers */,
 				2E76D92120F76AF200266950 /* Resources */,
+				2ED0A87E20FCF3C30077AB7A /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -136,6 +307,25 @@
 			productReference = 2E76D92C20F76AF300266950 /* ATParseIncrementalStoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2E76D95320F76DE700266950 /* ATParseIncrementalStore Example iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E76D96620F76DE800266950 /* Build configuration list for PBXNativeTarget "ATParseIncrementalStore Example iOS" */;
+			buildPhases = (
+				2E76D95020F76DE700266950 /* Sources */,
+				2E76D95120F76DE700266950 /* Frameworks */,
+				2E76D95220F76DE700266950 /* Resources */,
+				2E76D98B20F7710600266950 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E76D98A20F7710500266950 /* PBXTargetDependency */,
+			);
+			name = "ATParseIncrementalStore Example iOS";
+			productName = "ATParseIncrementalStore Example iOS";
+			productReference = 2E76D95420F76DE700266950 /* ATParseIncrementalStore Example iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,8 +338,12 @@
 				TargetAttributes = {
 					2E76D92220F76AF200266950 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					2E76D92B20F76AF300266950 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					2E76D95320F76DE700266950 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -160,6 +354,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 2E76D91920F76AF200266950;
 			productRefGroup = 2E76D92420F76AF200266950 /* Products */;
@@ -168,6 +363,7 @@
 			targets = (
 				2E76D92220F76AF200266950 /* ATParseIncrementalStore */,
 				2E76D92B20F76AF300266950 /* ATParseIncrementalStoreTests */,
+				2E76D95320F76DE700266950 /* ATParseIncrementalStore Example iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -187,13 +383,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E76D95220F76DE700266950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E76D96420F76DE800266950 /* LaunchScreen.storyboard in Resources */,
+				2E76D96120F76DE800266950 /* Assets.xcassets in Resources */,
+				2E76D95C20F76DE700266950 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2ED0A87E20FCF3C30077AB7A /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E76D91E20F76AF200266950 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED0A87D20FCEC5C0077AB7A /* NSEntityDescription+ParseClassName.swift in Sources */,
+				2E198B3121007E7900CF6C7D /* NSManagedObject.swift in Sources */,
+				2E76D98620F770CD00266950 /* ATParseIncrementalStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +431,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E76D95020F76DE700266950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E76D95920F76DE700266950 /* ViewController.swift in Sources */,
+				2E76D95F20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodeld in Sources */,
+				2E76D95720F76DE700266950 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -213,11 +449,36 @@
 			target = 2E76D92220F76AF200266950 /* ATParseIncrementalStore */;
 			targetProxy = 2E76D92E20F76AF300266950 /* PBXContainerItemProxy */;
 		};
+		2E76D98A20F7710500266950 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E76D92220F76AF200266950 /* ATParseIncrementalStore */;
+			targetProxy = 2E76D98920F7710500266950 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E76D95A20F76DE700266950 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E76D95B20F76DE700266950 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E76D96220F76DE800266950 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E76D96320F76DE800266950 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2E76D93520F76AF300266950 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E198B372100820500CF6C7D /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -338,13 +599,19 @@
 		};
 		2E76D93820F76AF300266950 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E198B372100820500CF6C7D /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ATParseIncrementalStore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,6 +622,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aratech.ATParseIncrementalStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,12 +631,17 @@
 		2E76D93920F76AF300266950 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ATParseIncrementalStore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,7 +659,9 @@
 		};
 		2E76D93B20F76AF300266950 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E198B372100820500CF6C7D /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ATParseIncrementalStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +679,7 @@
 		2E76D93C20F76AF300266950 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ATParseIncrementalStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -412,6 +688,51 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aratech.ATParseIncrementalStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E76D96720F76DE800266950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E198B372100820500CF6C7D /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "ATParseIncrementalStore Example iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aratech.ATParseIncrementalStore-Example-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E76D96820F76DE800266950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "ATParseIncrementalStore Example iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aratech.ATParseIncrementalStore-Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,7 +769,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2E76D96620F76DE800266950 /* Build configuration list for PBXNativeTarget "ATParseIncrementalStore Example iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E76D96720F76DE800266950 /* Debug */,
+				2E76D96820F76DE800266950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E76D95D20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E76D95E20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodel */,
+			);
+			currentVersion = 2E76D95E20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodel */;
+			path = ATParseIncrementalStore_Example_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2E76D91A20F76AF200266950 /* Project object */;
 }

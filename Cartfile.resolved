@@ -1,0 +1,6 @@
+github "AraTechnologyES/aratech-ios-coredata" "0.1.4"
+github "AraTechnologyES/aratech-ios-lib" "1.1.7"
+github "AraTechnologyES/aratech-ios-parse" "1.1.8"
+github "BoltsFramework/Bolts-ObjC" "1.9.0"
+github "facebook/facebook-ios-sdk" "sdk-version-4.34.0"
+github "parse-community/Parse-SDK-iOS-OSX" "1.17.1"
