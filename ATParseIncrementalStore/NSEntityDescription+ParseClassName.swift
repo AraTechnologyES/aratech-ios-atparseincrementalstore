@@ -17,7 +17,6 @@ public extension NSEntityDescription {
 		return "ParseClassName"
 	}
 	
-	
 	/// Nombre que la clase recibe en Parse.
 	public var parseClassName: String {
 		return self.userInfo?[ATParseIncrementalStoreManagedObjectEntityParseClassName] as? String ?? self.managedObjectClassName
