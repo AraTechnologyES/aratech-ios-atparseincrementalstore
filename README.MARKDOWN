@@ -1,10 +1,10 @@
 # ATParseIncrementalStore
 
-NSIncrementalStore para trabajar con *Parse*
+`NSIncrementalStore` para trabajar con *Parse*
 
 ## Requerimientos
 
-Tus clases de tipo  `NSManagedObject` deben tener la propiedad parseClassName, o llamarse igual que las clases en *Parse*.
+Tus clases de tipo  `NSManagedObject` deben tener la propiedad `parseClassName`, o llamarse igual que las clases en *Parse*.
 
 ## Integración
 
