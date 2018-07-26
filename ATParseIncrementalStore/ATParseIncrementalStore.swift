@@ -99,6 +99,8 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 	}
 	
 	open override func newValuesForObject(with objectID: NSManagedObjectID, with context: NSManagedObjectContext) throws -> NSIncrementalStoreNode {
+		os_log("newValuesForObject %@", log: .newValuesForObject, type: .info, objectID)
+		
 		guard let parseObject: PFObject = self.cache[objectID] else {
 			let message = "El objeto con NSManagedObjectID \(objectID) no existe en la cache"
 			os_log("%@", log: .atParseIncrementalStore, type: .error, message)
@@ -108,7 +110,9 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 		let values = parseObject.values(for: keys)
 		
 		if !parseObject.isDataAvailable {
+			os_log("Descargando datos de %@", log: .newValuesForObject, type: .info, parseObject)
 			parseObject.fetchInBackground { _, _ in
+				os_log("Descargados datos de %@", log: .newValuesForObject, type: .info, parseObject)
 				// Marcar como fault para forzar a pedir de nuevo los valores a newValuesForObject
 				context.refresh(context.object(with: objectID), mergeChanges: false)
 				// Notificar
@@ -259,6 +263,7 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 		
 		do {
 			let pfObjects = try pfQuery.findObjects()
+			os_log("Recuperados %d objectos de tipo %@", log: .parseFetch, type: .info, pfObjects.count, className)
 			return pfObjects
 		} catch {
 			os_log("Ocurrió un error con la petición a Parse:\n\t%@", log: .atParseIncrementalStore, type: .error, error.localizedDescription)
