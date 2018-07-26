@@ -60,6 +60,7 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 	// MARK: - Properties
 	
 	private var cache: [NSManagedObjectID: PFObject] = [:]
+	private var rowCache: RowCache = RowCache()
 	
 	// MARK: - Initialization
 	
@@ -120,7 +121,7 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 			}
 		}
 		
-		return NSIncrementalStoreNode(objectID: objectID, withValues: values, version: 1)
+		return self.rowCache.node(forObjectID: objectID, withValues: values)
 	}
 	
 	open override func newValue(forRelationship relationship: NSRelationshipDescription,
@@ -155,6 +156,18 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 		}
 		
 		return managedObjectsIDs
+	}
+	
+	open override func managedObjectContextDidRegisterObjects(with objectIDs: [NSManagedObjectID]) {
+		super.managedObjectContextDidRegisterObjects(with: objectIDs)
+		
+		objectIDs.forEach({ self.rowCache.managedObjectRegistered(withID: $0) })
+	}
+	
+	open override func managedObjectContextDidUnregisterObjects(with objectIDs: [NSManagedObjectID]) {
+		super.managedObjectContextDidUnregisterObjects(with: objectIDs)
+		
+		objectIDs.forEach({ self.rowCache.managedObjectUnregistered(withID: $0) })
 	}
 	
 	// MARK: Identifiers Translation
@@ -374,7 +387,6 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 			let objectIdProperty = NSAttributeDescription()
 			objectIdProperty.name = PFObjectAttributeKey.objectId
 			objectIdProperty.attributeType = NSAttributeType.stringAttributeType
-			let indexDescription = NSFetchIndexElementDescription(property: objectIdProperty, collationType: .binary)
 			
 			let createdAtProperty = NSAttributeDescription()
 			createdAtProperty.name = PFObjectAttributeKey.createdAt

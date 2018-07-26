@@ -27,6 +27,7 @@
 		2E198B432100834B00CF6C7D /* ParseUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97720F76F9400266950 /* ParseUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E19B6ED2108B9100022CE9A /* README.MARKDOWN in Resources */ = {isa = PBXBuildFile; fileRef = 2E19B6EC2108B9100022CE9A /* README.MARKDOWN */; };
 		2E19B6F02109A2DF0022CE9A /* NSFetchedResultsControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E19B6EF2109A2DF0022CE9A /* NSFetchedResultsControllerViewController.swift */; };
+		2E19B6F22109B1E20022CE9A /* RowCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E19B6F12109B1E20022CE9A /* RowCache.swift */; };
 		2E4A6B3C210712CE0035E43D /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A6B3B210712CE0035E43D /* OSLog.swift */; };
 		2E4A6B3E210725450035E43D /* PFObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A6B3D210725450035E43D /* PFObject.swift */; };
 		2E76D92D20F76AF300266950 /* ATParseIncrementalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D92320F76AF200266950 /* ATParseIncrementalStore.framework */; };
@@ -97,6 +98,7 @@
 		2E198B372100820500CF6C7D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2E19B6EC2108B9100022CE9A /* README.MARKDOWN */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MARKDOWN; sourceTree = SOURCE_ROOT; };
 		2E19B6EF2109A2DF0022CE9A /* NSFetchedResultsControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFetchedResultsControllerViewController.swift; sourceTree = "<group>"; };
+		2E19B6F12109B1E20022CE9A /* RowCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowCache.swift; sourceTree = "<group>"; };
 		2E4A6B3B210712CE0035E43D /* OSLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
 		2E4A6B3D210725450035E43D /* PFObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFObject.swift; sourceTree = "<group>"; };
 		2E76D92320F76AF200266950 /* ATParseIncrementalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATParseIncrementalStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				2E76D98520F770CD00266950 /* ATParseIncrementalStore.swift */,
+				2E19B6F12109B1E20022CE9A /* RowCache.swift */,
 				2ED0A87520FCDABB0077AB7A /* Extensions */,
 				2E76D98C20F7744400266950 /* Resources */,
 			);
@@ -433,6 +436,7 @@
 				2ED0A87D20FCEC5C0077AB7A /* NSEntityDescription+ParseClassName.swift in Sources */,
 				2E4A6B3C210712CE0035E43D /* OSLog.swift in Sources */,
 				2E4A6B3E210725450035E43D /* PFObject.swift in Sources */,
+				2E19B6F22109B1E20022CE9A /* RowCache.swift in Sources */,
 				2E198B3121007E7900CF6C7D /* NSManagedObject.swift in Sources */,
 				2E76D98620F770CD00266950 /* ATParseIncrementalStore.swift in Sources */,
 			);
@@ -545,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -602,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -717,6 +721,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LW82Q5GQV8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -739,6 +744,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LW82Q5GQV8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
