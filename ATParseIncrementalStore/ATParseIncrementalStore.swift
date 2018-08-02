@@ -364,6 +364,7 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 	/// - objectId
 	/// - createdAt
 	/// - updatedAt
+	
 	lazy var augmentedModel: NSManagedObjectModel = {
 		let augmentedModel = self.persistentStoreCoordinator?.managedObjectModel.copy() as! NSManagedObjectModel
 		for entity in augmentedModel.entities {
@@ -374,7 +375,10 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 			let objectIdProperty = NSAttributeDescription()
 			objectIdProperty.name = PFObjectAttributeKey.objectId
 			objectIdProperty.attributeType = NSAttributeType.stringAttributeType
-			let indexDescription = NSFetchIndexElementDescription(property: objectIdProperty, collationType: .binary)
+			
+			if #available(iOS 11.0, *) {
+				let indexDescription = NSFetchIndexElementDescription(property: objectIdProperty, collationType: .binary)
+			}
 			
 			let createdAtProperty = NSAttributeDescription()
 			createdAtProperty.name = PFObjectAttributeKey.createdAt
