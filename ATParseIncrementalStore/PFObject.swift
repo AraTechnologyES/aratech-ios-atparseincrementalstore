@@ -23,7 +23,11 @@ extension PFObject {
 	func values(for keys: [String]) -> [String: Any] {
 		if self.isDataAvailable {
 			let valuesPairs: [(String, Any)] = keys.compactMap({
-				if let property = self.object(forKey: $0) {
+				if let property = self.object(forKey: $0) as? PFFile,
+					let url = property.url {
+					return ($0, url)
+				}
+				else if let property = self.object(forKey: $0) {
 					return ($0, property)
 				} else {
 					return nil
