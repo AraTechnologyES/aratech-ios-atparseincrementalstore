@@ -15,13 +15,15 @@ lazy var persistentContainer: NSPersistentContainer = {
 	let storeType = "ATParseIncrementalStore."+ATParseIncrementalStore.storeType
 	NSPersistentStoreCoordinator.registerStoreClass(ATParseIncrementalStore.self, forStoreType: storeType)
 
-	let container = NSPersistentContainer(name: projectName)
+	let container = NSPersistentContainer(name: <#projectName#>)
 
 	let atParseIncrementalStoreDescription = NSPersistentStoreDescription()
 	atParseIncrementalStoreDescription.type = storeType
 	container.persistentStoreDescriptions = [atParseIncrementalStoreDescription]
 
-	container.loadPersistentStores(completionHandler: { (storeDescription, error) in ... }
+	container.loadPersistentStores(completionHandler: { (storeDescription, error) in <#...#> })
+	
+	return container
 }()
 
 ```
