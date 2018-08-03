@@ -30,3 +30,11 @@ lazy var persistentContainer: NSPersistentContainer = {
 ## Relaciones
 
 * Únicamente soporta relaciones a uno, modeladas con *Pointers* en *Parse*
+
+## PFFile
+
+Para indicar a la librería que una propiedad de *Core Data* debe subirse como `PFFile` deben añadirse al diccionario de `userInfo` las siguientes claves
+
+| **Clave** | **Valor** |
+| type | pffile |
+|contentType| image/jpeg, etc |
