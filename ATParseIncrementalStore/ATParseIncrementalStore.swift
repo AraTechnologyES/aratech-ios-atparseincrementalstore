@@ -299,8 +299,18 @@ open class ATParseIncrementalStore: NSIncrementalStore {
 		let className = managedObject.entity.parseClassName
 		let parseObject = PFObject(withoutDataWithClassName: className, objectId: parseObjectId)
 		
-		for (key, _)  in managedObject.entity.attributesByName {
-			parseObject.setProperty(managedObject.value(forKey: key), forKey: key)
+		for (key, description)  in managedObject.entity.attributesByName {
+			if let userInfo = description.userInfo, let type = userInfo["type"] as? String, type == "pffile" {
+				if let urlString = managedObject.value(forKey: key) as? String {
+					let url = URL(fileURLWithPath: urlString)
+					if let data = try? Data(contentsOf: url) {
+						let pfFile = PFFile(data: data, contentType: userInfo["contentType"] as? String)
+						parseObject.setProperty(pfFile, forKey: key)
+					}
+				}
+			} else {
+				parseObject.setProperty(managedObject.value(forKey: key), forKey: key)
+			}
 		}
 		
 		for (key, relationshipDescription) in managedObject.entity.relationshipsByName {
