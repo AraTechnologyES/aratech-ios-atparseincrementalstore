@@ -35,6 +35,7 @@ lazy var persistentContainer: NSPersistentContainer = {
 
 Para indicar a la librería que una propiedad de *Core Data* debe subirse como `PFFile` deben añadirse al diccionario de `userInfo` las siguientes claves
 
-| **Clave** | **Valor** |
+| Clave | Valor |
+| ------ | ------ | 
 | type | pffile |
-|contentType| image/jpeg, etc |
+| contentType | image/jpeg, etc |
