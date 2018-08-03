@@ -115,7 +115,7 @@ class AsyncPagedFetchViewController: UITableViewController, NSFetchedResultsCont
 		}
 		
 		loading = true
-		try? context.execute(asyncRequest)
+		_ = try? context.execute(asyncRequest)
 	}
 	
 	// MARK: - Table

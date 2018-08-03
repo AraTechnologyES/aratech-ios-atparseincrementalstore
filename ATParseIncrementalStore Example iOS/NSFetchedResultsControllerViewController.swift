@@ -9,6 +9,9 @@
 import os
 import UIKit
 import CoreData
+import ATCoreData
+
+extension Category: ATManaged { }
 
 class NSFetchedResultsControllerViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
@@ -20,17 +23,17 @@ class NSFetchedResultsControllerViewController: UITableViewController, NSFetched
 		return appDelegate.persistentContainer.viewContext
 	}
 	
-	lazy var fetchedResultsController: NSFetchedResultsController<Band> = {
-		let fetchedResultsController = NSFetchedResultsController<Band>(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+	lazy var fetchedResultsController: NSFetchedResultsController<Category> = {
+		let fetchedResultsController = NSFetchedResultsController<Category>(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
 		fetchedResultsController.delegate = self
 		
 		
 		return fetchedResultsController
 	}()
 	
-	var request: NSFetchRequest<Band> {
-		let fetchRequest: NSFetchRequest<Band> = Band.fetchRequest()
-		fetchRequest.sortDescriptors = [NSSortDescriptor(keyPath: \Band.opticalDensity, ascending: true)]
+	var request: NSFetchRequest<Category> {
+		let fetchRequest: NSFetchRequest<Category> = Category.fetchRequest()
+		fetchRequest.sortDescriptors = [NSSortDescriptor(keyPath: \Category.name, ascending: true)]
 		fetchRequest.fetchLimit = 500
 		fetchRequest.fetchBatchSize = 20
 		return fetchRequest
@@ -61,8 +64,9 @@ class NSFetchedResultsControllerViewController: UITableViewController, NSFetched
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "basic", for: indexPath)
-		cell.textLabel?.text = self.fetchedResultsController.fetchedObjects?[indexPath.row].objectID.uriRepresentation().lastPathComponent ?? "-1"
-		
+		let object = self.fetchedResultsController.fetchedObjects?[indexPath.row]
+		cell.textLabel?.text = object?.objectID.uriRepresentation().lastPathComponent ?? "-1"
+		cell.detailTextLabel?.text = object?.icon
 		return cell
 	}
 	

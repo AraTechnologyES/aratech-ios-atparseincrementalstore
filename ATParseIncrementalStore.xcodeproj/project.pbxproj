@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0B229321146D36009020C4 /* CreateAndSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B229221146D36009020C4 /* CreateAndSaveViewController.swift */; };
 		2E198B3121007E7900CF6C7D /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E198B3021007E7900CF6C7D /* NSManagedObject.swift */; };
 		2E198B322100806900CF6C7D /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D97020F76F9300266950 /* ATCoreData.framework */; };
 		2E198B332100806900CF6C7D /* ATLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E76D96D20F76F9300266950 /* ATLibrary.framework */; };
@@ -93,6 +94,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E0B229221146D36009020C4 /* CreateAndSaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAndSaveViewController.swift; sourceTree = "<group>"; };
 		2E198B3021007E7900CF6C7D /* NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObject.swift; sourceTree = "<group>"; };
 		2E198B372100820500CF6C7D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2E19B6EC2108B9100022CE9A /* README.MARKDOWN */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MARKDOWN; sourceTree = SOURCE_ROOT; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				2E76D95620F76DE700266950 /* AppDelegate.swift */,
+				2E0B229221146D36009020C4 /* CreateAndSaveViewController.swift */,
 				2E76D95820F76DE700266950 /* AsyncPagedFetchViewController.swift */,
 				2E19B6EF2109A2DF0022CE9A /* NSFetchedResultsControllerViewController.swift */,
 				2E76D95A20F76DE700266950 /* Main.storyboard */,
@@ -453,6 +456,7 @@
 				2E76D95920F76DE700266950 /* AsyncPagedFetchViewController.swift in Sources */,
 				2E76D95F20F76DE700266950 /* ATParseIncrementalStore_Example_iOS.xcdatamodeld in Sources */,
 				2E19B6F02109A2DF0022CE9A /* NSFetchedResultsControllerViewController.swift in Sources */,
+				2E0B229321146D36009020C4 /* CreateAndSaveViewController.swift in Sources */,
 				2E76D95720F76DE700266950 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

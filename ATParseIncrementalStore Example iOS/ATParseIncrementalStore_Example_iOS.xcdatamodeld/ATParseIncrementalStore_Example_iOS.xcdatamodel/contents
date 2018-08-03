@@ -4,6 +4,15 @@
         <attribute name="opticalDensity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="sample" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sample" syncable="YES"/>
     </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="contentType" value="image/jpeg"/>
+                <entry key="type" value="pffile"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Experiment" representedClassName="Experiment" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="creator" maxCount="1" deletionRule="Nullify" destinationEntity="User" syncable="YES"/>
@@ -20,9 +29,10 @@
     </entity>
     <elements>
         <element name="Band" positionX="-54" positionY="27" width="128" height="75"/>
+        <element name="Category" positionX="-18" positionY="72" width="128" height="75"/>
         <element name="Experiment" positionX="-54" positionY="9" width="128" height="73"/>
         <element name="Project" positionX="-54" positionY="0" width="128" height="75"/>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="58"/>
         <element name="Sample" positionX="-63" positionY="18" width="128" height="60"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="58"/>
     </elements>
 </model>
